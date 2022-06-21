@@ -1,4 +1,4 @@
-# cascades.github.io
-a (bad) css gallery made by me
+# testzone
+a gallery full of stuff i test with
 
-you may use these styles for whatever you want
+this can be css designs, shapes, animations, or just messing around
