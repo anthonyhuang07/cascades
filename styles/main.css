@@ -1,3 +1,9 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
 *, *:after, *:before {
     outline: none;
     -webkit-box-sizing: border-box;
@@ -18,10 +24,12 @@ header{
     overflow: hidden;
     text-align: center;
     padding: 10rem;
-    background-color:#232020;
+    background-color:#0E131F;
     color: white;
-    font-size: 2em;
+    font-size: 4em;
     margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .one{
@@ -31,9 +39,10 @@ header{
     position: relative;
     padding: 3rem 0 3rem 2rem;
     color: white;
-    background-color: #553739;
+    background-color: #38405F;
 } .one h2{
     padding: 6rem 0 0.5rem 0;
+    font-size: 2em;
 }
 
 .rainbow{
@@ -43,7 +52,7 @@ header{
     background-clip: text;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
+    background-size: 400% 100%; 
 }
 
 @keyframes rainbow_animation {
@@ -57,9 +66,10 @@ header{
 }
 
 .background-shape{
+    overflow: hidden;
     transform: rotate(160deg);
     position: absolute;
-    background-color:#2d2a2a;
+    background-color:#151d2e;
     width: 20rem;
     height: 60rem;
     border-radius: 10rem 0 0 0/ 0rem 0 0 0;
