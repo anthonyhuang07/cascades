@@ -11,6 +11,10 @@ html, body {
     position: relative;
 }
 
+div{
+    overflow: hidden;
+}
+
 h1, p{
     animation-name: fadeInBottom;
     animation-duration: 1.5s;
