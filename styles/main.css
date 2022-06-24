@@ -1,9 +1,3 @@
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
-
 *, *:after, *:before {
     outline: none;
     -webkit-box-sizing: border-box;
@@ -17,71 +11,94 @@ html, body {
     position: relative;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    padding: 10rem;
-    background-color:#0E131F;
-    color: white;
-    font-size: 4em;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
+h1, p{
+    animation-name: fadeInBottom;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 }
 
 .one{
-    font-family: 'Arvo', serif;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    padding: 3rem 0 3rem 2rem;
+    background-color:#FFF275;
+    padding: 7.5vw;
+} .one h1{
+    margin: 3vw auto;
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Castoro', serif;    
+    font-weight: 200;
+} .one p{
+    font-size: 1.5vw;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.two{
+    text-align: justify;
+    padding: 7.5vw 0 7.5vw 5vw;
+    background-color: #FF8C42;
+} .two h1{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 3vw;
+    margin: 2vw 0 2vw 0;
+} .two p{
+    font-size: 1.4vw;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 80%
+}
+
+.three{
     color: white;
-    background-color: #38405F;
-} .one h2{
-    padding: 6rem 0 0.5rem 0;
-    font-size: 2em;
+    direction:rtl;
+    text-align:justify;
+    padding: 7.5vw 5vw 7.5vw 0;
+    background-color: #FF3C38;
+} .three h1{
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 3vw;
+    margin: 2vw 0 2vw 0;
+} .three p{
+    font-size: 1.6vw;
+    font-family: 'Zen Kurenaido', sans-serif;
+    width: 80%
 }
 
-.rainbow{
-    position: relative;
-    background: linear-gradient(to right, #ff3399, #f59235, #f3de25, #00ff00, #0099ff, #ab66ff, #df3f3f);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%; 
+.four{
+    color: white;
+    text-align: center;
+    padding: 7.5vw 0 7.5vw 0;
+    background-color: #A23E48;
+} .four h1{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 3vw;
+    margin: 2vw 0 2vw 0;
+} .four p{
+    margin: 0 auto;
+    font-size: 1.4vw;
+    font-family: 'Gotu', sans-serif;    
+    width: 75%
 }
 
-@keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
+.five{
+    color: white;
+    text-align: justify;
+    padding: 7.5vw 0 7.5vw 5vw;
+    background-color: #6C8EAD;
+} .five h1{
+    font-family: 'Sigmar One', cursive;
+    font-size: 3vw;
+    margin: 2vw 0 2vw 0;
+} .five p{
+    font-size: 1.75vw;
+    font-family: 'Flow Circular', cursive;
+    width: 80%
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
     }
-
-    50% {
-        background-position: 100% 0;
-    }
-}
-
-.background-shape{
-    overflow: hidden;
-    transform: rotate(160deg);
-    position: absolute;
-    background-color:#151d2e;
-    width: 20rem;
-    height: 60rem;
-    border-radius: 10rem 0 0 0/ 0rem 0 0 0;
-}
-
-.giant{
-    font-family: 'Potta One', cursive;
-    font-size: 12.5em;
-}
-
-.kotlin{
-    float: right;
-    clip-path: polygon(86% 8%, 50% 50%, 86% 90%, 15% 90%, 15% 50%, 15% 8%);
-
-}
+    to { opacity: 1 }
+}   
