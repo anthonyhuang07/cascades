@@ -28,7 +28,7 @@ h1, p{
     margin: 3vw auto;
     text-align: center;
     font-size: 6vw;
-    font-family: 'Castoro', serif;    
+    font-family: 'Castoro', serif;
     font-weight: 200;
 } .one p{
     font-size: 1.5vw;
@@ -36,6 +36,13 @@ h1, p{
     text-align: center;
     width: 60%; 
     font-family: 'Plus Jakarta Sans', sans-serif;
+} .circle1{
+    position: absolute;
+    background-color:hsl(54, 100%, 70%);
+    border-radius: 10rem;
+} .rect1{
+    position: absolute;
+    background-color:hsl(54, 100%, 70%);
 }
 
 .two{
